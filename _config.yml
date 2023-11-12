@@ -1,7 +1,10 @@
 ### Site Settings ###
 title               : jamievo
 description         : >-
-                      Hi, I'm Jamie! Welcome to my corner of the internet :)
+                      Hi, I'm Jamie! <br>
+                      I'm
+                      <br>
+                      Welcome to my corner of the internet :)
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 remote_theme        : jvo1230/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
