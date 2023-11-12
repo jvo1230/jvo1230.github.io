@@ -2,7 +2,7 @@
 title               : jamievo
 description         : >-
                       Hi, I'm Jamie! <br>
-                      I'm
+                      I'm a recent a Computer Science and Biomedical Engineering graduate	from UWA. I'm currently interested in ML and AI, and how we can apply them in the medical field to help people.
                       <br>
                       Welcome to my corner of the internet :)
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
@@ -57,8 +57,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
+
 
 
 ### Disqus ###
@@ -90,11 +89,6 @@ defaults:
       type: "projects"
     values:
       layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
   - scope:
       path: ""
       type: "posts"
