@@ -7,7 +7,7 @@ description: This project investigates the use of attention-based mechanisms in 
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
 <i>Publication:</i>
-<br><i>Github: https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
+<br><i><b>Github:</b> https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
 ![Firstimage](https://media.istockphoto.com/id/1358833655/vector/vector-illustration-of-confused-man-with-mess-in-his-head.jpg?s=612x612&w=0&k=20&c=8sJzusexsxa5wKxwezZgOS7HQA7PJ6HOk9T5CqbjjgE=)
 
 The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well, us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
@@ -15,9 +15,9 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
 typically affecting people over the age of 65. Unfortunately, there's 
-no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible. But this is hard. The underlying factors which cause the disease is complex and still not very well understood. So, is there a way that we can effectively detect AD in individuals given the complexity of the disease? The answer:
+no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So how can we effectively detect the presence of AD in individuals when we don't fully know what defining patterns or features in the brains with AD? The answer:
 
 <b>Convolutional Neural Networks!</b>
 
-In this project, we present a multimodal attention based CNN, MNA-net.
+In this project, we present a multimodal attention-based CNN, <i>MNA-net<i>. Given that we want to start treatment as early as possible to delay cognitive symptoms, we focus on predicting whether a cognitively normal individual will develop Alzheimer's disease or any form of mild cognitive impairment in a given time period. MNA-net combines both MRI and PET images to achieve this.
  
