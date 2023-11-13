@@ -19,5 +19,5 @@ no current cure for AD, leaving treatment processes to revolve around delaying t
 
 <b>Convolutional Neural Networks!</b>
 
-In this project, we present a multimodal attention-based CNN, <i>MNA-net</i>. Given that we want to start treatment as early as possible to delay cognitive symptoms, we focus on predicting whether a cognitively normal individual will develop Alzheimer's disease or any form of mild cognitive impairment within a time period of 10 years. MNA-net combines both MRI and PET images to achieve this.
+In this project, we present a multimodal attention-based CNN, <i>MNA-net</i>. Given that we want to start treatment as early as possible to delay the onset of cognitive symptoms, we focus on predicting progression of Alzheimer's disease, that is, whether an cognitively normal individual will develop AD or any form of mild cognitive impairment within a given time period. MNA-net combines both MRI and PET images to achieve this.
  
