@@ -6,8 +6,10 @@ description: This project investigates the use of attention-based mechanisms in 
 ---
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
+Publication:
+Github:
 
-The brain is amazing....ly complex. It's made of more than 86 billion nerve cells and it's what makes us, us! It allows us to see, feel, talk, have emotions. But when problems occur in the brain and how it functions, debilitating conditions which take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
+The brain is amazing....ly complex. It's made of more than 86 billion nerve cells and it's what makes us, well, us! It allows us to see, feel, talk, have emotions. But when problems occur in the brain and how it functions, debilitating conditions which take away our ability to do simple things can arise. One of these conditions is known as Alzheimer's Disease.
 
 Alzheimer's Disease is a neurodegenerative condition characterised by 
 
