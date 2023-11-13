@@ -15,9 +15,9 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
 typically affecting people over the age of 65. Unfortunately, there's 
-no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So how can we effectively detect the presence of AD in individuals when we don't fully know what defining patterns or features in the brains with AD? The answer:
+no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So how can we effectively detect the presence of AD in individuals when we don't fully know what defining patterns or features to look for in brains related to AD? The answer:
 
 <b>Convolutional Neural Networks!</b>
 
-In this project, we present a multimodal attention-based CNN, <i>MNA-net<i>. Given that we want to start treatment as early as possible to delay cognitive symptoms, we focus on predicting whether a cognitively normal individual will develop Alzheimer's disease or any form of mild cognitive impairment in a given time period. MNA-net combines both MRI and PET images to achieve this.
+In this project, we present a multimodal attention-based CNN, <i>MNA-net</i>. Given that we want to start treatment as early as possible to delay cognitive symptoms, we focus on predicting whether a cognitively normal individual will develop Alzheimer's disease or any form of mild cognitive impairment within a time period of 10 years. MNA-net combines both MRI and PET images to achieve this.
  
