@@ -9,9 +9,17 @@ description: This project investigates the use of attention-based mechanisms in 
 <i>Publication:</i>
 <br><i>Github:</i>
 
-The brain is amazing....ly complex. It's made of more than 86 billion nerve cells and it's what makes us, well, us! It allows us to see, feel, talk, have emotions. But when problems occur in the brain and how it functions, debilitating conditions which take away our ability to do simple things can arise. One of these conditions is known as Alzheimer's Disease.
+The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well, us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
 
-Alzheimer's Disease is a neurodegenerative condition characterised by 
+Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
+impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
+estimated to have affected 32 million people globally in 2022. Unfortunately, there's 
+no cure for AD, leaving current treatment processes to revolve around delaying the
+onset of cognitive symptoms [6]. Early diagnosis of AD is therefore imperative for
+early treatment and improving patient outcomes. However, this is difficult due to
+the lack of clarity into the characteristics and patterns relating to the pathogenesis
+of AD [1].
+ 
 
 ![preview](https://www.sketchappsources.com/resources/source-image/we-were-soldiers-landing-page-dbruggisser.jpg)
 
