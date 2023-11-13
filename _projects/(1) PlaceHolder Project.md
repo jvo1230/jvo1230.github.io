@@ -14,11 +14,8 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 
 Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
-estimated to have affected 32 million people globally in 2022. Unfortunately, there's 
-no cure for AD, leaving current treatment processes to revolve around delaying the
-onset of cognitive symptoms [6]. Early diagnosis of AD is therefore imperative for
-early treatment and improving patient outcomes. However, this is difficult due to
-the lack of clarity into the characteristics and patterns relating to the pathogenesis
+typically affecting people over the age of 65. Unfortunately, there's 
+no current cure for AD, leaving current  treatment processes revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible. But this is hard. The underlying factors which cause the disease is complex and still not very well understood.
 of AD [1].
  
 
