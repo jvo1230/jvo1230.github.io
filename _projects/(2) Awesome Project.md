@@ -1,7 +1,7 @@
 ---
 name: Ovarian Cancer Subtype Classification and Outlier Detection
 tools: [Pytorch, Python]
-image: https://www.sketchappsources.com/resources/source-image/movie-badges-jurajjurik.png
+image: https://storage.googleapis.com/kaggle-datasets-images/2863852/4938597/e9968ee9132ccd038eb64b49d43aa9b1/dataset-card.png
 description: This project has an individual showcase page, not just a direct link to the project site or repo. Now you have more space to describe your awesome project!
 ---
 
