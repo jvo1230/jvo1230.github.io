@@ -8,10 +8,9 @@ description: This project investigates the use of attention-based mechanisms in 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
 <i>Publication:</i>
 <br><i>Github:</i>
-
-![Firstimage](https://www.labiotech.eu/wp-content/uploads/2023/06/Alzheimers-disease-1200x628.jpg)
-
 The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well, us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
+
+![Firstimage](https://www.drugtargetreview.com/wp-content/uploads/AD-1.jpg "https://www.drugtargetreview.com/news/110855/new-guidelines-for-diagnosing-alzheimers-disease/")
 
 Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
