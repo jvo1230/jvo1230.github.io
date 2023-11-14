@@ -6,7 +6,7 @@ description: This project investigates the use of attention-based mechanisms in 
 ---
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
-<i>Publication:</i>
+<i><b>Publication:</b></i>
 <br><i><b>Github:</b> https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
 
 The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well.. us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
@@ -15,12 +15,12 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 
 
 
-Alzheimer’s disease (AD) is a neurodegenerative disease characterised by memory
+Alzheimer’s disease (AD) is a neurodegenerative condition characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
 typically affecting people over the age of 65. Unfortunately, there's 
-no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the disease as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So how can we effectively detect the presence of AD in individuals when we don't fully know what defining patterns or features to look for in brains related to AD? The answer:
+no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the AD as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So how can we effectively detect the presence of AD in individuals when we don't fully know what defining patterns or features to look for in brains related to AD? The answer:
 
 <b>Convolutional Neural Networks!</b>
 
-In this project, we present a multimodal neuroimaging attention-based CNN, <i>MNA-net</i>. Given that we want to start treatment as early as possible to delay the onset of cognitive symptoms, we focus on predicting progression of Alzheimer's disease, that is, whether an cognitively normal individual will develop AD or any form of mild cognitive impairment within a given time period. MNA-net combines both MRI and PET images to achieve this.
+In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>ttention-based CNN, <i>MNA-net</i>. Given that we want to start treatment as early as possible to delay the onset of cognitive symptoms, we focus on predicting progression of Alzheimer's disease, that is, whether an cognitively normal individual will develop AD or any form of mild cognitive impairment within a given time period. MNA-net combines both MRI and PET images to achieve this.
  
