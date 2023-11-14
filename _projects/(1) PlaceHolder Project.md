@@ -28,7 +28,9 @@ In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>tten
 ## Dataset
 
 For this project, we use the OASIS-3 dataset obtained from the Open Access Series of Imaging Studies (OASIS). OASIS was launched in 2007 with the primary goal of making neuroimaging data publicly available for study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS in 2018. It is a compilation of clinical data and MRI and PET images of multiple subjects at various stages of cognitive decline collected over the course of 30 years. Subject cognitive states in OASIS-3 are defined by clinical dementia rating (CDR) scores. A total of 1378 participants entered the study, 755 of which were cognitively normal (CDR = 0), and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our study, we will utilise the MRI and PIB PET images in OASIS-3.
+
 <br>
+
 #### Subject Selection
 
 To predict the progression of cognitive impairment in individuals within OASIS-3,
@@ -44,7 +46,9 @@ their baseline diagnosis were considered.
 4. Of subjects who remained CN over the course of the study, only those who
 received a diagnosis of CN at least 10 years after their baseline diagnosis were
 considered.
+
 <br>
+
 #### Image Data
 
 Post processed Freesurfer files for the MRI images were provided by OASIS-3. These
@@ -63,7 +67,7 @@ simulate different positions and size of the patient within the scanner, and ana
 Figure 4 presents examples of elastic deformations and affine transforms applied to
 an MRI image.
 
-## 2. MNA-net
+## MNA-net
 To harness the strengths of both MRI and PET in CN to MCI and AD classification,
 we propose MNA-net, a multimodal neuroimaging attention-based CNN. We define
 three stages in the classification process in MNA-net as shown in the figure below: patch
@@ -87,7 +91,9 @@ Due to the complexity and wideness of the architecture, training MNA-net as a
 single model is computationally intensive. Instead, we train the individual models
 for each classification stage separately. Features are extracted from each model and
 used as inputs for the subsequent classification stage.
+
 <br>
+
 #### Patch-based Feature Extraction
 To extract the patch-based features, we adopt a 3D ResNet architecture as the
 backbone model. First proposed by Kaiming et al [37] in 2015, ResNet is family of
@@ -113,7 +119,9 @@ The output feature maps of conv block 4 are then finally subjected to an average
 pooling layer, flattened, and subsequently passed through a fully connected layer
 for final classification. The features prior to the final dense and sigmoid layers are
 extracted and used as inputs for the multimodal attention classification stage.
+
 <br>
+
 #### Attention-based Multimodal Feature Fusion
 To combine the learned patch features of MRI and PET, we introduce the concept of
 self-attention into our fusion pipeline. Figure 7 shows the architecture of the attention model trained to fuse the patch features. Multiple approaches in the fusion of
