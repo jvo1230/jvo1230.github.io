@@ -7,8 +7,8 @@ description: This project investigates the use of attention-based mechanisms in 
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
 <br>
-<i><b>Publication:</b></i>
-<i>[Github](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline)</i>
+<i><b>Publication: To be written</b></i>
+<br><i>[Github](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline)</i>
 
 
 The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well.. us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
@@ -18,14 +18,13 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 Alzheimer’s disease (AD) is a neurodegenerative condition characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
 typically affecting people over the age of 65. Unfortunately, there's 
-no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the AD as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So this brings up the question, is there a way we can effectively detect the presence of AD in individuals when we don't fully know the defining patterns or features realting to brains with AD? The answer:
+no current cure for AD, leaving treatment processes to revolve around delaying the onset of symptoms. So, it's pretty important to detect the presence of the AD as soon possible to ensure early treatment. But this is hard. The underlying factors which cause the disease are complex and still not very well understood. So this brings up the question, is there a way we can effectively detect the presence of AD in individuals when we don't fully know the defining patterns or features relating to brains with AD? The answer:
 
 <b>Convolutional Neural Networks!</b>
 
 In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>ttention-based convolutional neural network (CNN), <i>MNA-net</i>. Instead of simply classifying whether someone has AD, we focus on predicting the progression of the disease, that is, predict whether a cognitively normal individual will develop AD or some form on mild cognitive impairment (MCI) in the future. This is more beneficial considering the importance of early treatment. To learn the complex features relating to MCI and AD, MNA-net combines both Magnetic Resonance Imaging (MRI) and Positron Emission Tomography (PET) using attention-based mechanisms.
 
 <br>
-
 ## Dataset
 
 For this project, we use the OASIS-3 dataset obtained from the Open Access Series of Imaging Studies (OASIS). OASIS was launched in 2007 with the primary goal of making neuroimaging data publicly available for study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS in 2018. It is a compilation of clinical data and MRI and PET images of multiple subjects at various stages of cognitive decline collected over the course of 30 years. Subject cognitive states in OASIS-3 are defined by clinical dementia rating (CDR) scores. A total of 1378 participants entered the study, 755 of which were cognitively normal (CDR = 0), and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our study, we will utilise the MRI and PIB PET images in OASIS-3.
