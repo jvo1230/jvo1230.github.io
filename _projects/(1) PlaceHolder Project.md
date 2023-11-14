@@ -6,6 +6,7 @@ description: This project investigates the use of attention-based mechanisms in 
 ---
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
+
 <i><b>Publication:</b></i>
 <br><i><b>Github:</b> https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
 
