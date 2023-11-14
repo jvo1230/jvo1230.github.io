@@ -14,8 +14,6 @@ The brain is amazingly complex. It's made up of more than 86 billion nerve cells
 
 ![Firstimage](https://media.istockphoto.com/id/1358833655/vector/vector-illustration-of-confused-man-with-mess-in-his-head.jpg?s=612x612&w=0&k=20&c=8sJzusexsxa5wKxwezZgOS7HQA7PJ6HOk9T5CqbjjgE=)
 
-
-
 Alzheimer’s disease (AD) is a neurodegenerative condition characterised by memory
 impairment and cognitive decline. It is one of the most prevalent neurodegenerative diseases,
 typically affecting people over the age of 65. Unfortunately, there's 
@@ -24,7 +22,9 @@ no current cure for AD, leaving treatment processes to revolve around delaying t
 <b>Convolutional Neural Networks!</b>
 
 In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>ttention-based convolutional neural network (CNN), <i>MNA-net</i>. Instead of simply classifying whether someone has AD, we focus on predicting the progression of the disease, that is, predict whether a cognitively normal individual will develop AD or some form on mild cognitive impairment (MCI) in the future. This is more beneficial considering the importance of early treatment. To learn the complex features relating to MCI and AD, MNA-net combines both Magnetic Resonance Imaging (MRI) and Positron Emission Tomography (PET) using attention-based mechanisms.
+
 <br>
+
 ## Dataset
 
 For this project, we use the OASIS-3 dataset obtained from the Open Access Series of Imaging Studies (OASIS). OASIS was launched in 2007 with the primary goal of making neuroimaging data publicly available for study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS in 2018. It is a compilation of clinical data and MRI and PET images of multiple subjects at various stages of cognitive decline collected over the course of 30 years. Subject cognitive states in OASIS-3 are defined by clinical dementia rating (CDR) scores. A total of 1378 participants entered the study, 755 of which were cognitively normal (CDR = 0), and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our study, we will utilise the MRI and PIB PET images in OASIS-3.
@@ -66,6 +66,8 @@ Data augmentation was performed on the training set to increase the dataset size
 simulate different positions and size of the patient within the scanner, and anatomical variations present in the images, random affine transformations and elastic deformations were applied to the images. The resulting training set was of size 488.
 Figure 4 presents examples of elastic deformations and affine transforms applied to
 an MRI image.
+
+<br>
 
 ## MNA-net
 To harness the strengths of both MRI and PET in CN to MCI and AD classification,
@@ -141,5 +143,7 @@ through a multi-head attention layer with 4 attention heads. Finally, the vertic
 stacked attention weighted outputs for the PET and MRI features are flattened and
 passed through a fully connected layer for final classification. The final flattened
 features are then used as inputs to the final model shown in Figure 5.
+
+<br>
 
 ## Results
