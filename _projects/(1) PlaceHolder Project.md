@@ -6,7 +6,7 @@ description: This project investigates the use of attention-based mechanisms in 
 ---
 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
-
+<br>
 <i><b>Publication:</b></i>
 <br><i><b>Github:</b> https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
 
@@ -25,11 +25,11 @@ no current cure for AD, leaving treatment processes to revolve around delaying t
 
 In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>ttention-based convolutional neural network (CNN), <i>MNA-net</i>. Instead of simply classifying whether someone has AD, we focus on predicting the progression of the disease, that is, predict whether a cognitively normal individual will develop AD or some form on mild cognitive impairment (MCI) in the future. This is more beneficial considering the importance of early treatment. To learn the complex features relating to MCI and AD, MNA-net combines both Magnetic Resonance Imaging (MRI) and Positron Emission Tomography (PET) using attention-based mechanisms.
 
-## Dataset
+## 1. Dataset
 
 For this project, we use the OASIS-3 dataset obtained from the Open Access Series of Imaging Studies (OASIS). OASIS was launched in 2007 with the primary goal of making neuroimaging data publicly available for study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS in 2018. It is a compilation of clinical data and MRI and PET images of multiple subjects at various stages of cognitive decline collected over the course of 30 years. Subject cognitive states in OASIS-3 are defined by clinical dementia rating (CDR) scores. A total of 1378 participants entered the study, 755 of which were cognitively normal (CDR = 0), and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our study, we will utilise the MRI and PIB PET images in OASIS-3.
 
-#### Subject Selection
+#### 1.1 Subject Selection
 
 To predict the progression of cognitive impairment in individuals within OASIS-3,
 we focus on two groups of subjects: subjects who remained cognitively normal (CN), and subjects transitioned from CN to MCI or AD over the course of the study in OASIS-3. For
@@ -45,7 +45,7 @@ their baseline diagnosis were considered.
 received a diagnosis of CN at least 10 years after their baseline diagnosis were
 considered.
 
-#### Image Data
+#### 1.2 Image Data
 
 Post processed Freesurfer files for the MRI images were provided by OASIS-3. These
 files contain the subject-specific 3D MRI images which have undergone skull stripping. PIB PET images, however, were provided as 4D Nifti files. The PET images
@@ -63,7 +63,7 @@ simulate different positions and size of the patient within the scanner, and ana
 Figure 4 presents examples of elastic deformations and affine transforms applied to
 an MRI image.
 
-## MNA-net
+## 2. MNA-net
 To harness the strengths of both MRI and PET in CN to MCI and AD classification,
 we propose MNA-net, a multimodal neuroimaging attention-based CNN. We define
 three stages in the classification process in MNA-net as shown in the figure below: patch
@@ -88,7 +88,7 @@ single model is computationally intensive. Instead, we train the individual mode
 for each classification stage separately. Features are extracted from each model and
 used as inputs for the subsequent classification stage.
 
-#### Patch-based Feature Extraction
+#### 2.1 Patch-based Feature Extraction
 To extract the patch-based features, we adopt a 3D ResNet architecture as the
 backbone model. First proposed by Kaiming et al [37] in 2015, ResNet is family of
 CNN architectures which introduce the concept residual connections. ResNet aims
@@ -114,7 +114,7 @@ pooling layer, flattened, and subsequently passed through a fully connected laye
 for final classification. The features prior to the final dense and sigmoid layers are
 extracted and used as inputs for the multimodal attention classification stage.
 
-#### Attention-based Multimodal Feature Fusion
+#### 2.2 Attention-based Multimodal Feature Fusion
 To combine the learned patch features of MRI and PET, we introduce the concept of
 self-attention into our fusion pipeline. Figure 7 shows the architecture of the attention model trained to fuse the patch features. Multiple approaches in the fusion of
 PET and MRI for MCI and AD classification seen in literature have simply involved
@@ -134,4 +134,4 @@ stacked attention weighted outputs for the PET and MRI features are flattened an
 passed through a fully connected layer for final classification. The final flattened
 features are then used as inputs to the final model shown in Figure 5.
 
-## Results
+## 3. Results
