@@ -66,8 +66,11 @@ an MRI image.
 ## MNA-net
 To harness the strengths of both MRI and PET in CN to MCI and AD classification,
 we propose MNA-net, a multimodal neuroimaging attention-based CNN. We define
-three stages in the classification process in MNA-net as shown in Figure 5: patch
+three stages in the classification process in MNA-net as shown in the figure below: patch
 feature extraction, multimodal attention, and patch fusion.
+
+![MNANET](https://user-images.githubusercontent.com/70950884/277098743-8658a856-293d-479b-b859-1a847c5c58fe.png)
+
 In the first stage, we adopt a patch-based technique. MRI and PET images are
 both divided into 27 uniform patches of size 44 x 54 x 44 with 50% overlap. Each
 patch is then fed into a 3D ResNet-10 model to extract the local features of each
@@ -96,8 +99,11 @@ cognitive decline is use of 2D kernels. To accommodate PET and MRI scans within
 the framework of 2D CNNs, the 3D brain images are often divided into multiple
 2D slices. However, this results in a loss of spatial information. To this end, we
 instead utilise a 3D ResNet architecture using 3D convolutions adapted from Hara
-et al [38]. A brief illustration of the model is shown in Figure 6. The patch images
-of size 44x54x44 are first passed through a 7x7x7 convolutional layer with stride 2
+et al [38]. A brief illustration of the model is shown in Figure 6. 
+
+![patch](https://user-images.githubusercontent.com/70950884/277109747-de9d45c0-1998-4e86-9f44-b512247b95da.png)
+
+The patch images of size 44x54x44 are first passed through a 7x7x7 convolutional layer with stride 2
 and padding 3, followed by max pooling, batch normalisation, and a ReLu. We then
 introduce the residual connections through four sequential conv blocks. Each conv
 block consists of two 3x3x3 convolutional layers, each followed by batch normalisation and Relu. A residual connection is included between the beginning of the block
@@ -117,6 +123,8 @@ modal interactions. Representations of MRI and PET features which take into acco
 feature independently. Attention mechanisms aim to mimic the cognitive process of
 attention, enabling neural networks to create shared representations which consider
 all parts of the input data based on attention scores.
+
+![attention](https://user-images.githubusercontent.com/70950884/277109752-0e5a9a65-8c52-4129-8086-e601ed9a533a.png)
 
 For every patch in corresponding positions between the MRI and PET patches,
 we extract and vertically stack the features prior to the last layer from the previously
