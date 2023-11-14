@@ -27,28 +27,14 @@ In this project, we present a <b>M</b>ultimodal <b>N</b>euroimaging <b>A</b>tten
 
 ## Dataset
 
-The OASIS-3 dataset obtained from the Open Access Series of Imaging Studies
-(OASIS) [33] was used to evaluate our proposed model. OASIS was launched in
-2007 with the primary goal of making neuroimaging data publicly available for
-study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS
-in 2018. It is a compilation of clinical data and MRI and PET images of multiple
-subjects at various stages of cognitive decline collected over the course of 30 years.
-Subject cognitive states in OASIS-3 are defined by CDR scores. A total of 1378
-participants entered the study, 755 of which were cognitively normal (CDR = 0),
-and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our
-study, we will utilise the MRI and PIB PET images in OASIS-3.
+For this project, we use the OASIS-3 dataset obtained from the Open Access Series of Imaging Studies (OASIS). OASIS was launched in 2007 with the primary goal of making neuroimaging data publicly available for study and analysis. OASIS-3 is a longitudinal dataset released as a part of OASIS in 2018. It is a compilation of clinical data and MRI and PET images of multiple subjects at various stages of cognitive decline collected over the course of 30 years. Subject cognitive states in OASIS-3 are defined by clinical dementia rating (CDR) scores. A total of 1378 participants entered the study, 755 of which were cognitively normal (CDR = 0), and 622 who were at progressing stages of cognitive decline (CDR ≥ 0.5). For our study, we will utilise the MRI and PIB PET images in OASIS-3.
 
 #### Subject Selection
 
 To predict the progression of cognitive impairment in individuals within OASIS-3,
-two groups of subjects were of interest: subjects who remained CN, and subjects
-transitioned from CN to MCI or AD over the course of the study in OASIS-3. For
-this scope of this work, a timeframe 10 years was considered. A key factor to
-consider during subject selection is the temporal alignment of data. It is important
-that subject scans are taken within close proximity of their initial diagnosis to ensure
-that scans are representative of their cognition at the time of their baseline. Taking
-these factors into consideration, the subject selection criteria for the OASIS-3 dataset
-were as follows:
+we focus on two groups of subjects: subjects who remained cognitively normal (CN), and subjects transitioned from CN to MCI or AD over the course of the study in OASIS-3. For
+this scope of this work, we consider a timeframe 10 years. One important point to keep in mind
+is the temporal alignment of data. It's important that subject scans are taken within close proximity of their initial diagnosis so that scans are representative of their cognition at the time of their baseline. Taking these factors into consideration, our subject selection criteria for the OASIS-3 dataset are as follows:
 1. Subjects were diagnosed as CN at baseline.
 2. Subjects have taken MRI and PET scans that are within a year from their
 baseline diagnosis.
@@ -58,11 +44,6 @@ their baseline diagnosis were considered.
 4. Of subjects who remained CN over the course of the study, only those who
 received a diagnosis of CN at least 10 years after their baseline diagnosis were
 considered.
-After applying the selection criteria, 204 subjects remained in the final dataset. Of
-these subjects, 104 developed some form of cognitive impairment within 10 years,
-with the remaining 100 subjects remaining CN. A 20/20/80 split was applied for the
-training, validation, and test sets respectively. Table 1 presents the split of subjects
-in each class after the subject selection process.
 
 #### Image Data
 
