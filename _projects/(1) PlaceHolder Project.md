@@ -8,7 +8,7 @@ description: This project investigates the use of attention-based mechanisms in 
 # Multimodal Attention-based CNNs for the Prediction of Alzheimer's Disease
 <br>
 <i><b>Publication:</b></i>
-<br><i><b>Github:</b> https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline</i>
+<br><i><b>Github:</b> [https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline)</i>
 
 The brain is amazingly complex. It's made up of more than 86 billion nerve cells and it's what makes us, well.. us! But when problems occur in the brain and how it functions, debilitating conditions which can take away our ability to do simple things arise. One of these conditions is known as Alzheimer's Disease.
 
