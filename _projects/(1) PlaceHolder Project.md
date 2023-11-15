@@ -104,7 +104,7 @@ used as inputs for the subsequent classification stage.
 
 #### Patch-based Feature Extraction
 To extract the patch-based features, we adopt a 3D ResNet architecture as the
-backbone model. First proposed by Kaiming et al. in 2015, ResNet is family of
+backbone model. First proposed by Kaiming <i>et al.</i> in 2015, ResNet is family of
 CNN architectures which introduce the concept residual connections. ResNet aims
 to overcome the issue of exploding and vanishing gradients seen in deep networks.
 
@@ -112,8 +112,7 @@ The major limitation of many CNN architectures applied in the prediction of
 cognitive decline is use of 2D kernels. To accommodate PET and MRI scans within
 the framework of 2D CNNs, the 3D brain images are often divided into multiple
 2D slices. However, this results in a loss of spatial information. To this end, we
-instead utilise a 3D ResNet architecture using 3D convolutions adapted from Hara
-et al [38]. A brief illustration of the model is shown in Figure 6. 
+instead utilise a 3D ResNet architecture using 3D convolutions. A brief illustration of the model is shown in the figure below. 
 
 ![patch](https://user-images.githubusercontent.com/70950884/277109747-de9d45c0-1998-4e86-9f44-b512247b95da.png)
 
@@ -132,13 +131,16 @@ extracted and used as inputs for the multimodal attention classification stage.
 
 #### Attention-based Multimodal Feature Fusion
 To combine the learned patch features of MRI and PET, we introduce the concept of
-self-attention into our fusion pipeline. Figure 7 shows the architecture of the attention model trained to fuse the patch features. Multiple approaches in the fusion of
-PET and MRI for MCI and AD classification seen in literature have simply involved
-the concatenation learned features. This, however, is flawed due to the lack of cross
-modal interactions. Representations of MRI and PET features which take into account information from each other may be more informative than considering each
+self-attention into our fusion pipeline. PET and MRI for MCI and AD classification seen in literature have simply involved the concatenation learned features. This, however, is flawed due to the lack of cross modal interactions. Representations of MRI and PET features which take into account information from each other may be more informative than considering each
 feature independently. Attention mechanisms aim to mimic the cognitive process of
 attention, enabling neural networks to create shared representations which consider
 all parts of the input data based on attention scores.
+
+To understand the concept intuitively, we can liken it to the understanding of the context of a word in a sentence. For example, lets look at the following sentence:
+
+<i>The dog <b>barked</b> very loudly and jumped</i>.
+
+If we just focus on the word <i>barked</i> by itself, it doesn't really have much meaning does it. <i>Who</i> exactly barked? <i>How</i> did they bark? Conversely, if we now focus on the word barked considering the words in the sentence, we now have a much better understanding of the word. In particular, we naturally place more emphasis on the words <i>dog</i> and <i>loudly</i>, while the words <i>the</i>, <i>and</i>, and <i>jumped</i> don't really provide much context to the word <i>barked</i>. That's kinda the idea of what we want to do when we combine the PET and MRI features. We don't want to just focus on each modality seperately, but instead find contextual representations. The figure below shows the architecture of the attention model trained to fuse the patch features. Multiple approaches in the fusion of
 
 ![attention](https://user-images.githubusercontent.com/70950884/277109752-0e5a9a65-8c52-4129-8086-e601ed9a533a.png)
 
@@ -148,6 +150,6 @@ trained patch-based feature extraction models. We then pass the stacked features
 through a multi-head attention layer with 4 attention heads. Finally, the vertically
 stacked attention weighted outputs for the PET and MRI features are flattened and
 passed through a fully connected layer for final classification. The final flattened
-features are then used as inputs to the final model shown in Figure 5.
+features are then used as inputs to the final model.
 
 <br>
