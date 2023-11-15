@@ -65,7 +65,7 @@ PET noise and skull removal.
 Finally, both MRI and PET images are standardised and aligned to a common anatomical template by normalising voxel intensities and registering them to Montreal Neurological Institute (MNI) space using FMRIB’s Linear Image Registration Tool (FLIRT) 
 
 Data augmentation is performed on the training set to increase the dataset size. To
-simulate different positions and size of the patient within the scanner, and anatomical variations present in the images, random affine transformations and elastic deformations were applied to the images. The figure below examples of elastic deformations and affine transforms applied to an MRI image.
+simulate different positions and size of the patient within the scanner, and anatomical variations present in the images, random affine transformations and elastic deformations were applied to the images. The figure below shows examples of elastic deformations and affine transforms applied to an MRI image.
 
 ![aug](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/2b733000-e4a6-4e97-825e-abe46670d127)
 <i>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏ ‎‏‏‎ ‎‏ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎‏‏‎ ‎‏‏‎‏‏‎ ‎‏‏‎‎‏‏‎ ‎‎‏‏‎ ‎‏ ‎‏‏ ‎‏‏From left to right: Control MRI, Elastic Deformation, Affine Transformation</i>
@@ -82,7 +82,7 @@ feature extraction, multimodal attention, and patch fusion.
 In the first stage, we adopt a patch-based technique. MRI and PET images are
 both divided into 27 uniform patches of size 44 x 54 x 44 with 50% overlap. Each
 patch is then fed into a 3D ResNet-10 model to extract the local features of each
-image. In the second stage of the classification process, we introduce an attentionbased ensemble architecture to facilitate the fusion of the different neuroimaging
+image. In the second stage of the classification process, we introduce an attention-based ensemble architecture to facilitate the fusion of the different neuroimaging
 modalities. For every patch in corresponding positions between the MRI and PET
 patches, we extract the learnt features from the ResNet-10 models and pass them
 through an attention-based model. This model utilises self-attention mechanisms to
@@ -100,7 +100,7 @@ used as inputs for the subsequent classification stage.
 
 #### Patch-based Feature Extraction
 To extract the patch-based features, we adopt a 3D ResNet architecture as the
-backbone model. First proposed by Kaiming et al [37] in 2015, ResNet is family of
+backbone model. First proposed by Kaiming et al. in 2015, ResNet is family of
 CNN architectures which introduce the concept residual connections. ResNet aims
 to overcome the issue of exploding and vanishing gradients seen in deep networks.
 
@@ -147,5 +147,3 @@ passed through a fully connected layer for final classification. The final flatt
 features are then used as inputs to the final model shown in Figure 5.
 
 <br>
-
-## Results
