@@ -82,15 +82,19 @@ feature extraction, multimodal attention, and patch fusion.
 In the first stage, we adopt a patch-based technique. MRI and PET images are
 both divided into 27 uniform patches of size 44 x 54 x 44 with 50% overlap. Each
 patch is then fed into a 3D ResNet-10 model to extract the local features of each
-image. In the second stage of the classification process, we introduce an attention-based ensemble architecture to facilitate the fusion of the different neuroimaging
+image. By dividing the neuroimages into patches, we allow MNA-net to more effectively capture the local features in each patch location. 
+
+In the second stage of the classification process, we introduce an attention-based ensemble architecture to facilitate the fusion of the different neuroimaging
 modalities. For every patch in corresponding positions between the MRI and PET
 patches, we extract the learnt features from the ResNet-10 models and pass them
 through an attention-based model. This model utilises self-attention mechanisms to
-enable the model to create shared representations of the MRI and PET features. In
-the final stage, we consolidate the features extracted from the patch-level models.
+enable the model to create shared representations of the MRI and PET features. 
+
+In the final stage, we consolidate the features extracted from the patch-level models.
 The attention weighted multimodal features for each patch are extracted from the
 attention models and flattened, concatenated, and passed through a dense with
 sigmoid activation for the final classification.
+
 Due to the complexity and wideness of the architecture, training MNA-net as a
 single model is computationally intensive. Instead, we train the individual models
 for each classification stage separately. Features are extracted from each model and
