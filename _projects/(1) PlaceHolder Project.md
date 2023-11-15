@@ -59,17 +59,19 @@ static 3D images. Noise and skull is then need to be removed from the PET images
 Extration Tool (BET) and Synthstrip. Figure 3 presents an example of
 PET noise and skull removal. 
 
-![skullstrip](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/4142d03d-f255-4f75-aabc-8cf54d6ffeea)
-<i>Skull and noise removal of PET image</i>
+| ![skullstrip](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/4142d03d-f255-4f75-aabc-8cf54d6ffeea)
+|:--:| 
+| *Skull and noise removal from PET image* |
 
 Finally, both MRI and PET images are standardised and aligned to a common anatomical template by normalising voxel intensities and registering them to Montreal Neurological Institute (MNI) space using FMRIB’s Linear Image Registration Tool (FLIRT) 
 
 Data augmentation is performed on the training set to increase the dataset size. To
 simulate different positions and size of the patient within the scanner, and anatomical variations present in the images, random affine transformations and elastic deformations were applied to the images. The figure below examples of elastic deformations and affine transforms applied to an MRI image.
 
-![aug](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/2b733000-e4a6-4e97-825e-abe46670d127)
-<i>From left to right: Control MRI, Elastic Deformation, Affine Transformed</i>
-<br>
+| ![aug](https://github.com/JamieVo890/Multimodal-Attention-based-Neural-Networks-for-the-Prediction-of-Cognitive-Decline/assets/70950884/2b733000-e4a6-4e97-825e-abe46670d127)
+|:--:| 
+| *From left to right: Control MRI, Elastic Deformation, Affine Transformed* |
+
 
 ## MNA-net
 To harness the strengths of both MRI and PET in CN to MCI and AD classification,
