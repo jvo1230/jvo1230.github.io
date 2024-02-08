@@ -203,13 +203,3 @@ body {
         font-size: 1rem;
     }
 }
-
-  @media (max-width: 767px){
-    .bob .boxs{
-      flex-direction: column;
-      }
-    .bob .boxs .dream{
-      width: 100%;
-  }
-}
-
